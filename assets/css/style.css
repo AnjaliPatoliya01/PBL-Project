@@ -1,24 +1,9 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
+ /* CUSTOM PROPERTY */
 
 :root {
 
-  /**
-   * colors
-   */
+  /* colors */
 
   --middle-blue-green: hsl(176, 35%, 63%);
   --sonic-silver: hsl(0, 0%, 44%);
@@ -29,9 +14,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
 
-  /**
-   * typography
-   */
+  /* typography */
 
   --ff-jost: "Jost", sans-serif;
 
@@ -49,18 +32,14 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * transition
-   */
+  /* transition */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.75s ease;
   --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
-  /**
-   * spacing
-   */
+  /* spacing */
 
   --section-padding: 60px;
 
@@ -69,10 +48,7 @@
 
 
 
-
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
+ /* RESET */
 
 *, *::before, *::after {
   margin: 0;
@@ -125,11 +101,8 @@ body {
 
 
 
+ /* REUSED STYLE */
 
-
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -217,11 +190,7 @@ h3 > a { color: inherit; }
 
 
 
-
-
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
+/* HEADER */
 
 .header-search { display: none; }
 
@@ -372,12 +341,7 @@ h3 > a { color: inherit; }
 }
 
 
-
-
-
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
+/* HERO */
 
 .hero {
   background-repeat: no-repeat;
@@ -408,9 +372,7 @@ h3 > a { color: inherit; }
 
 
 
-/*-----------------------------------*\
- * #SERVICE
-\*-----------------------------------*/
+ /* SERVICE */
 
 .service { padding-block: 45px; }
 
@@ -443,11 +405,8 @@ h3 > a { color: inherit; }
 
 
 
+ /* CATETORY */
 
-
-/*-----------------------------------*\
- * #CATETORY
-\*-----------------------------------*/
 
 .category { padding-top: 0; }
 
@@ -487,13 +446,33 @@ h3 > a { color: inherit; }
   padding-inline: 30px;
 }
 
+/* ABOUT */
+
+.about_us{
+  display: flex;
+  gap: 50px;
+  padding-top: 30px;
+}
+.about_us h2 {
+  padding-bottom: 40px;
+  padding-top: 98px;
+  font-family: 'Montserratregular';
+}
+
+.about_us p {
+  font-family: 'poppinsregular';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  width: 40%;
+}
+.about_us-img{
+  width: 50%;
+}
 
 
+/* RENT WEAR */
 
-
-/*-----------------------------------*\
- * #PRODUCT
-\*-----------------------------------*/
 
 .filter-list {
   display: flex;
@@ -590,11 +569,7 @@ h3 > a { color: inherit; }
 
 
 
-
-
-/*-----------------------------------*\
- * #BLOG
-\*-----------------------------------*/
+/* BLOG */
 
 .blog .section-title { margin-bottom: 40px; }
 
@@ -657,16 +632,11 @@ h3 > a { color: inherit; }
 }
 
 
+/* CONTACT */
 
+.contect { padding-bottom: 120px; }
 
-
-/*-----------------------------------*\
- * #NEWSLATTER
-\*-----------------------------------*/
-
-.newsletter { padding-bottom: 120px; }
-
-.newsletter-card {
+.contect-card {
   background-color: var(--cultured);
   background-repeat: no-repeat;
   background-size: cover;
@@ -675,7 +645,7 @@ h3 > a { color: inherit; }
   text-align: center;
 }
 
-.newsletter-card .card-title {
+.contect-card .card-title {
   color: var(--eerie-black);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
@@ -683,21 +653,21 @@ h3 > a { color: inherit; }
   margin-bottom: 30px;
 }
 
-.newsletter-card .card-text { margin-bottom: 30px; }
+.contect-card .card-text { margin-bottom: 30px; }
 
-.newsletter-card .input-wrapper {
+.contect-card .input-wrapper {
   position: relative;
   margin-bottom: 20px;
 }
 
-.newsletter-card .input-field {
+.contect-card .input-field {
   background: var(--white);
   height: 60px;
   padding-inline: 50px 20px;
   border-radius: 6px;
 }
 
-.newsletter-card .input-wrapper ion-icon {
+.contect-card .input-wrapper ion-icon {
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -705,15 +675,11 @@ h3 > a { color: inherit; }
   transform: translateY(-50%);
 }
 
-.newsletter-card .btn { gap: 10px; }
+.contect-card .btn { gap: 10px; }
 
 
 
-
-
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
+/* FOOTER */
 
 .footer-top {
   background: var(--cultured);
@@ -835,21 +801,15 @@ h3 > a { color: inherit; }
  * #MEDIA QUARIES
 \*-----------------------------------*/
 
-/**
- * responsive for larger than 480px screen
- */
+/* responsive for larger than 480px screen*/
 
 @media (min-width: 480px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-     * typography
-     */
+    /* typography */
 
     --fs-1: 3rem;
     --fs-2: 2rem;
@@ -857,26 +817,16 @@ h3 > a { color: inherit; }
   }
 
 
-
-  /**
-   * CATEGORY
-   */
+  /* CATEGORY */
 
   .category-list > li { width: calc(50% - 15px); }
 
 
-
-  /**
-   * PRODUCT
-   */
+  /* PRODUCT */
 
   .product-list > li { width: calc(50% - 12.5px); }
 
-
-
-  /**
-   * FOOTER
-   */
+  /* FOOTER */
 
   .footer-brand { width: 100%; }
 
@@ -890,21 +840,15 @@ h3 > a { color: inherit; }
 
 
 
-/**
- * responsive for larger than 580px screen
- */
+/* responsive for larger than 580px screen */
 
 @media (min-width: 580px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-     * typography
-     */
+    /* typography */
 
     --fs-1: 3.75rem;
     --fs-2: 2.375rem;
@@ -914,9 +858,7 @@ h3 > a { color: inherit; }
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE*/
 
   .container {
     max-width: 550px;
@@ -929,23 +871,17 @@ h3 > a { color: inherit; }
 
 
 
-/**
- * responsive for larger than 768px screen
- */
+/* responsive for larger than 768px screen */
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE */
 
   .container { max-width: 700px; }
 
 
 
-  /**
-   * HERO
-   */
+  /* HERO */
 
   .hero {
     background-position: center;
@@ -954,42 +890,34 @@ h3 > a { color: inherit; }
 
 
 
-  /**
-   * BLOG
-   */
+  /* BLOG */
 
   .blog-list > li { width: calc(50% - 15px); }
 
 
 
-  /**
-   * NEWSLETTER
-   */
+  /* CONTACT */
 
-  .newsletter-card > * {
+  .contect-card > * {
     max-width: 480px;
     margin-inline: auto;
   }
 
-  .newsletter-card .card-form { position: relative; }
+  .contect-card .card-form { position: relative; }
 
-  .newsletter-card .input-wrapper { margin-bottom: 0; }
+  .contect-card .input-wrapper { margin-bottom: 0; }
 
-  .newsletter-card .btn {
-    /* position: absolute; */
-    /* top: 0;
-    right: 0;
-    bottom: 0; */
-    width: max-content;
+  .contect-card .btn {
+    width: 100%;
     padding-inline: 35px;
-    border-radius: 0 6px 6px 0;
+    border-radius: 6px 6px 6px 6px;
+    text-align: center;
+    height: 45px;
   }
 
 
 
-  /**
-   * FOOTER
-   */
+  /* FOOTER */
 
   .footer-list { width: calc(33.33% - 26.66px); }
 
@@ -1016,15 +944,11 @@ h3 > a { color: inherit; }
 
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-     * typography
-     */
+    /* typography */
 
     --fs-1: 5rem;
 
@@ -1032,25 +956,19 @@ h3 > a { color: inherit; }
 
 
 
-  /**
-   * RESET
-   */
+  /* RESET */
 
   body { padding-block: 0; }
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE */
 
   .container { max-width: 950px; }
 
 
 
-  /**
-   * HEADER
-   */
+  /* HEADER */
 
   .header {
     position: relative;
@@ -1146,17 +1064,13 @@ h3 > a { color: inherit; }
 
 
 
-  /**
-   * CATEGORY
-   */
+  /* CATEGORY */
 
   .category-list > li:not(:first-child, :nth-child(2)) { width: calc(25% - 22.5px); }
 
 
 
-  /**
-   * PRODUCT
-   */
+  /* PRODUCT */
 
   .product-list > li { width: calc(33.33% - 16.66px); }
 
@@ -1170,7 +1084,10 @@ h3 > a { color: inherit; }
     transition: var(--transition-1);
   }
 
-  .product-card .card-banner { overflow: hidden; }
+  .product-card .card-banner { 
+    overflow: hidden; 
+    height: 300px;
+  }
 
   .product-card .card-banner:hover .card-actions {
     visibility: visible;
@@ -1183,19 +1100,15 @@ h3 > a { color: inherit; }
 
 
 
-  /**
-   * BLOG
-   */
+  /* BLOG */
 
   .blog-list > li { width: calc(33.33% - 20px); }
 
 
 
-  /**
-   * NEWSLETTER
-   */
+  /* CONTACT */
 
-  .newsletter-card .card-form { max-width: 650px; }
+  .contect-card .card-form { max-width: 650px; }
 
 }
 
@@ -1203,21 +1116,15 @@ h3 > a { color: inherit; }
 
 
 
-/**
- * responsive for larger than 1200px screen
- */
+/* responsive for larger than 1200px screen */
 
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-     * typography
-     */
+    /* typography */
 
     --fs-1: 6.25rem;
 
@@ -1225,33 +1132,25 @@ h3 > a { color: inherit; }
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  /* REUSED STYLE */
 
   .container { max-width: 1150px; }
 
 
 
-  /**
-   * HEADER
-   */
+  /* HEADER */
 
   .header-search .input-field { width: 350px; }
 
 
 
-  /**
-   * PRODUCT
-   */
+  /* PRODUCT */
 
   .product-list > li { width: calc(25% - 18.75px); }
 
 
 
-  /**
-   * FOOTER
-   */
+  /* FOOTER */
 
   .footer-brand { width: calc(40% - 30px); }
 
